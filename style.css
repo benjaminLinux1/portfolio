@@ -17,3 +17,24 @@ dialog{width:100%;height:100%;max-width:none;max-height:none;border:0;margin:0;p
 .gallery{background:var(--bg);padding:4vw;display:grid;grid-template-columns:repeat(2,1fr);gap:18px;align-items:start}.gallery img{display:block;width:100%;height:auto;background:#fff}.gallery img:nth-child(3n){grid-column:1/-1}
 .reveal{opacity:0;transform:translateY(22px);transition:.7s ease}.reveal.on{opacity:1;transform:none}
 @media(max-width:760px){header{padding:0 20px}.hero,.section,.contact{padding-left:20px;padding-right:20px}.hero{min-height:72vh}.hero-bottom,.sectiontop{display:block}.hero-bottom a{display:inline-block;margin-top:18px}.grid{grid-template-columns:1fr}.pic{height:120vw;max-height:620px}.about{grid-template-columns:1fr}.twocol,.facts{grid-template-columns:1fr}.gallery{grid-template-columns:1fr;padding:18px}.gallery img:nth-child(3n){grid-column:auto}.casehead{padding:90px 20px 45px}.contactrow{flex-direction:column;gap:14px}}
+
+.video-cover img{object-position:center 45%}
+.video-gallery{background:var(--bg);padding:4vw;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:start}
+.video-item{border:0;padding:0;background:#fff}
+.video-item video{display:block;width:100%;aspect-ratio:9/16;object-fit:cover;background:#0d0f12}
+.video-meta{display:grid;grid-template-columns:34px 1fr;gap:10px;padding:14px 2px 2px;border-top:1px solid var(--line)}
+.video-meta>span{font-size:11px;color:var(--muted)}
+.video-meta b{font-size:14px}
+.video-meta p{margin:4px 0 0;font-size:12px;color:var(--muted)}
+@media(max-width:760px){.video-gallery{grid-template-columns:1fr;padding:18px}.video-item video{max-height:78vh}}
+
+/* PHANCY brand identity case study */
+.brand-cover{background:#111116}
+.brand-cover img{object-fit:contain;background:#111116;padding:5.5%}
+.phancy-head{max-width:1320px}
+.case-download{display:inline-flex;align-items:center;margin-top:34px;border:1px solid var(--ink);border-radius:999px;padding:13px 18px;font-size:12px;font-weight:700;letter-spacing:.04em;transition:.2s ease}
+.case-download:hover{background:var(--ink);color:#fff}
+.gallery.brand-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;background:#f7f5f3}
+.gallery.brand-gallery img{grid-column:auto!important;box-shadow:0 1px 0 rgba(13,15,18,.04)}
+.gallery.brand-gallery img:first-child,.gallery.brand-gallery img:nth-child(7),.gallery.brand-gallery img:last-child{grid-column:1/-1!important}
+@media(max-width:760px){.gallery.brand-gallery{grid-template-columns:1fr}.gallery.brand-gallery img{grid-column:auto!important}.case-download{margin-top:24px}}
